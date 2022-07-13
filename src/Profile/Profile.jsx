@@ -1,17 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-class Profile extends Component{
-
-  render(){
-    return(
+class Profile extends Component {
+  render() {
+    return (
       <div>
-        <img src='https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg' width={160}/>
+        <img src={this.props.img} width={160} />
         <div>
-          <span>Mishti Panchal</span>
-          <span>23 Years</span>
+          <span>{this.props.name}</span>
+          <span>{this.props.age}Years</span>
         </div>
       </div>
-    )
+    );
   }
 }
 
